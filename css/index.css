@@ -2,9 +2,6 @@ body{
     margin: 0px;
     padding: 0px;
 }
-#nav{
-    /* position: absolute; */
-}
 #nav>div:first-child{
     height: 70px;
     display: flex;
@@ -91,7 +88,7 @@ body{
     margin-top: 50px;
 }
 #mdiv{
-    width: 90%;
+    width: 85%;
     margin: auto;
     margin-top: 20px;
 }
@@ -151,6 +148,98 @@ body{
     background-color:#1565C0 ;
     cursor: pointer;
 }
+#signup>a{
+    color: #1565C0;
+}
+#login > a{
+    color: white;
+}
 a{
     text-decoration: none;
+}
+#mdiv > div{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-bottom: 30px;
+}
+#mdiv > div > img{
+    width: 100%;
+}
+#footer{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#footer>p>a{
+    color: blue;
+    text-decoration: underline;
+}
+#footer>p{
+    line-height: 30px;
+}
+#footer > div{
+    display: flex;
+    flex-wrap:wrap ;
+}
+#footer > div>button{
+    height: 60px;
+    width: 120px;
+    margin: auto
+}
+#footer > h3{
+    text-align: center;
+    margin-top: 50px;
+}
+#belowFooter>div{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);;
+}
+#belowFooter>div>div{
+    padding-left: 40px;
+    line-height: 30px;
+}
+#bfoot{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#bfoot>img{
+    width: 80px;
+    height: 80px;
+}
+#qr>img{
+    width: 60%;
+    display: block;
+    margin-bottom: 40px;
+}
+#fbinsta{
+    align-items: center;
+}
+#condition{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    /* margin-bottom: 100px; */
+}
+#condition>a{
+    color: #000;
+}
+.vertical{
+    width: 0px;
+    border: 1px solid #B0BEC5;
+    height: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+body>p{
+    color: #78909C;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
