@@ -2,9 +2,6 @@ body{
     margin: 0px;
     padding: 0px;
 }
-#nav{
-    /* position: absolute; */
-}
 #nav>div:first-child{
     height: 70px;
     display: flex;
@@ -150,6 +147,12 @@ body{
 #login:hover{
     background-color:#1565C0 ;
     cursor: pointer;
+}
+#signup>a{
+    color: #1565C0;
+}
+#login > a{
+    color: white;
 }
 a{
     text-decoration: none;
