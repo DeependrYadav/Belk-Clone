@@ -93,15 +93,6 @@ body{
 .dropdown:hover .dropdown-content > div{
     margin-top: 50px;
 }
-#mdiv{
-    width: 85%;
-    margin: auto;
-    margin-top: 150px;
-}
-#mdiv > img{
-    width: 100%;
-    margin-bottom: 30px;
-}
 .ldropbtn{
     text-decoration: none;
     color: #000;
@@ -163,41 +154,7 @@ body{
 a{
     text-decoration: none;
 }
-#mdiv > div{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    margin-bottom: 30px;
-}
-#mdiv > div > img{
-    width: 100%;
-}
-#footer{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 100px;
-}
-#footer>p>a{
-    color: blue;
-    text-decoration: underline;
-}
-#footer>p{
-    line-height: 30px;
-}
-#footer > div{
-    display: flex;
-    flex-wrap:wrap ;
-}
-#footer > div>button{
-    height: 60px;
-    width: 120px;
-    margin: auto
-}
-#footer > h3{
-    text-align: center;
-    margin-top: 50px;
-}
+
 #belowFooter>div{
     width: 90%;
     margin: auto;
@@ -248,4 +205,91 @@ body>p{
     text-align: center;
     margin-bottom: 40px;
     margin-top: 30px;
+}
+#total{
+    margin-top: 150px;
+}
+
+#cart-container{
+    width: 90%;
+    margin: auto;
+    /* margin-top: 150px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#cart-container>div{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* padding-left: 10px; */
+    padding-bottom: 20px;
+}
+#cart-container>div >div{
+    width: 80%;
+    /* height: 200px; */
+    margin: auto;
+    /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 10px;
+    padding: 15px;
+}
+#cart-container>div >div>img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#cart-container h2{
+    /* color: red; */
+    padding-left: 20px;
+}
+#cart-container h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#cart-container h3{
+    padding-left: 20px;
+}
+.discount{
+    text-decoration-line: line-through;
+    margin-top: -15px;
+}
+#cart-container p{
+    padding-left: 20px;
+}
+.discription{
+    color: red;
+}
+.discription:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* #cart-container button{
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: #1976D2;
+    color: white;
+    border-radius: 6px;
+} */
+#cart-container button:hover{
+    background-color: #1565C0;
+    cursor: pointer;
+}
+#cart-container img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+h1{
+    text-align: center;
+}
+h1:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+#cart-container button{
+    margin-left: 20px;
+}
+.remove{
+    display: block;
+    margin-left: 20px;
 }

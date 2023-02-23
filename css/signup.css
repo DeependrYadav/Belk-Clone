@@ -93,15 +93,6 @@ body{
 .dropdown:hover .dropdown-content > div{
     margin-top: 50px;
 }
-#mdiv{
-    width: 85%;
-    margin: auto;
-    margin-top: 150px;
-}
-#mdiv > img{
-    width: 100%;
-    margin-bottom: 30px;
-}
 .ldropbtn{
     text-decoration: none;
     color: #000;
@@ -163,74 +154,45 @@ body{
 a{
     text-decoration: none;
 }
-#mdiv > div{
-    width: 100%;
+#createAccount{
+    width: 500px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    margin-bottom: 30px;
-}
-#mdiv > div > img{
-    width: 100%;
-}
-#footer{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 100px;
-}
-#footer>p>a{
-    color: blue;
-    text-decoration: underline;
-}
-#footer>p{
-    line-height: 30px;
-}
-#footer > div{
-    display: flex;
-    flex-wrap:wrap ;
-}
-#footer > div>button{
-    height: 60px;
-    width: 120px;
-    margin: auto
-}
-#footer > h3{
+    /* border: 2px solid red; */
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
 }
-#belowFooter>div{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);;
-}
-#belowFooter>div>div{
-    padding-left: 40px;
-    line-height: 30px;
-}
-#bfoot{
-    display: flex;
+#createAccount>input{
+    display: block;
     width: 80%;
     margin: auto;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 20px;
 }
-#bfoot>img{
-    width: 80px;
-    height: 80px;
-}
-#qr>img{
-    width: 60%;
+#createAccount>button{
     display: block;
+    width: 250px;
+    margin: auto;
+    height: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
+    font-size: 20px;
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    border-radius: 6px;
 }
-#fbinsta{
-    align-items: center;
+#createAccount>button:hover{
+    background-color: #1565C0;
+    cursor: pointer;
 }
+
 #condition{
     display: flex;
     flex-wrap: wrap;
     width: 70%;
     margin: auto;
-    /* margin-bottom: 100px; */
+    margin-top: 50px;
 }
 #condition>a{
     color: #000;
