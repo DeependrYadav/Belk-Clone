@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/signup.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="../css/cart.css">
+  </head>
+  <body>
     <div id="nav">
         <div>
             <img src="/image/authentic mart.png" alt="">
@@ -863,18 +863,64 @@
             <p>Find a store</p>
         </div>
     </div>
-    <div id="createAccount">
-        <h1>Create Account</h1>
-        <h3>Personal Information</h3>
-        <input type="text" id="fname" placeholder="First Name">
-        <input type="text" id="lname" placeholder="Last Name">
-        <h3>Contact Information</h3>
-        <input type="number" id="phoneNo" placeholder="Phone Number(Optional)">
-        <input type="email" id="email" placeholder="Email">
-        <h3>Security</h3>
-        <input type="password" id="password" placeholder="Password">
-        <button id="createAcc" onclick="location.href='/htmlFile/login.html'">Create Account</button>
+    <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+    <div id="cart-container">
+      <!-- Here Append All the cart Products  -->
     </div><hr>
+    <div id="belowFooter">
+        <div>
+            <div>
+                <h2>Costumer services</h2>
+                <p>Contact us</p>
+                <p>Find my order</p>
+                <p>Returns & Refunds</p>
+                <p>Find a Store</p>
+                <p>Store Directory</p>
+                <p>Find a Registry</p>
+                <p>Find a Wish List</p>
+                <p>Shipping Information</p>
+                
+            </div>
+            <div>
+                <h2>Belk Rewards+ Credit Card</h2>
+                <div id="bfoot">
+                    <img src="../image/creditCardImg.png" alt="">
+                    <p>Apply for a belk Rewards+ credit card</p>
+                </div>
+                <p>Pay my bills</p>
+                <p>Returns & Refunds</p>
+                <p>Rebate Center</p>
+                <p>Pickup & Delivery Options</p>
+                
+            </div>
+            <div>
+                <h2>About Belk</h2>
+                <p>About us</p>
+                <p>Buy Online, Pick Up In Store</p>
+                <p>Belk Bucks</p>
+                <p>Cataloga & Ads</p>
+                <p>eGift Cards</p>
+                <p>Careers</p>
+                <p>Policies & Guidelines</p>
+                <p>FAQs</p>
+            </div>
+            <div id="qr">
+                <h2>Get the belk App</h2>
+                <img src="../image/Screenshot_20230222_142353.png" alt="">
+                <img src="https://belk.scene7.com/is/image/Belk/footer-app-ios-badge-2x?&$DWP_ARTWORK$" alt="">
+                <img src="https://belk.scene7.com/is/image/Belk/footer-app-android-badge-2x?&$DWP_ARTWORK$" alt="">
+            </div>
+        </div>
+        <div style="width: 70%;margin: auto;" id="fbinsta">
+            <h2>Stay connected</h2>
+            <img src="../image/facebook insta.png" alt="">
+            <div>
+                <p>Get $10 off with email sign-up! Use on top of coupons.</p>
+            </div>
+            <input style="height: 40px;" type="text" placeholder="Enter your email address">
+        </div>
+        <hr>
+    </div>
     <div id="condition">
         <a href="#">Terms of Use</a>
         <div class="vertical"></div>
@@ -895,35 +941,83 @@
         <a href="#">Feedback</a>
     </div>
     <p>© 2023 Belk, Inc. & Belk eCommerce LLC.All Rights Reserved.</p>
-</body>
+  </body>
 </html>
 <script>
-    let fname=document.getElementById("fname");
-    let lname=document.getElementById("lname");
-    let phonNo=document.getElementById("phoneNo");
-    let email=document.getElementById("email");
-    let password=document.getElementById("password");
-    let btn=document.getElementById("createAcc");
-    let data=JSON.parse(localStorage.getItem('signData'))||[];
+    let cardItem=JSON.parse(localStorage.getItem('cart'));
+    let cCont=document.getElementById('cart-container');
+    let total=document.getElementById("cart-total");
+    let tMon=0;
+    display(cardItem)
+    function display(arr){
+      cCont.innerHTML="";
+      tMon=0;
+      arr.map((ele,ind)=>{
+        let div=document.createElement("div");
+        let idiv=document.createElement("div");
+        let img=document.createElement("img");
+        let brand=document.createElement("h2");
+        let price=document.createElement("h3");
+        let dprice=document.createElement("h3");
+        let details=document.createElement("p");
+        let category=document.createElement("p");
+        let cartBtn=document.createElement("button");
+        let incri=document.createElement("button");
+        let quantity=document.createElement("span");
+        let decri=document.createElement("button");
 
-    
-    btn.addEventListener("click",()=>{
-        let obj={
-            fname:fname.value,
-            lname:lname.value,
-            phonNo:phonNo.value,
-            email:email.value,
-            password:password.value,
-            };
-        data.push(obj);
-        localStorage.setItem('signData',JSON.stringify(data));
-        fname.value=null;
-        lname.value=null;
-        phonNo.value=null;
-        email.value=null;
-        password.value=null;
+        details.classList.add('discription');
+        dprice.classList.add('discount');
+        cartBtn.classList.add('remove')
+        img.src=ele.image;
+        idiv.append(img);
+        brand.innerText=ele.title;
+        price.innerText=ele.price+" :after coupon";
+        dprice.innerText=ele.price+1;
+        details.innerText=ele.description;
+        category.innerText=ele.category;
+        decri.innerText="-"
+        quantity.innerText=ele.quantity
+        incri.innerText="+"
+        cartBtn.innerText="Remove";
+        /////-------incriment-------/////
+        incri.addEventListener("click",()=>{
+          ele.quantity+=1;
+          display(cardItem);
+          localStorage.setItem('cart',JSON.stringify(cardItem))
+        })
+        decri.addEventListener("click",()=>{
+          if(ele.quantity==1){
+            alert("Quantity can't be less then one");
+          }
+          else{
+            ele.quantity-=1;
+            display(cardItem);
+            localStorage.setItem('cart',JSON.stringify(cardItem))
+          }
+        });
+        ////------cartBtn--------////
+        cartBtn.addEventListener("click",()=>{
+          arr.splice(ind,1);
+          display(arr);
+          localStorage.setItem('cart',JSON.stringify(cardItem));
+          if(cardItem.length==0){
+          total.innerText=0;
+        }
+        })
+        let money="";
+        for(let i=1;i<ele.price.length;i++){
+            money+=ele.price[i];
+        }
+        money=+money;
+        console.log((money))
+        tMon+=money*ele.quantity
+        total.innerText=tMon;
 
-        alert('Account created successfully')
-    })
-        
+        ////////------append---------///////
+        div.append(idiv,brand,price,dprice,details,category,decri,quantity,incri,cartBtn);
+        cCont.append(div);
+      })
+    };
+  </script>
 </script>
