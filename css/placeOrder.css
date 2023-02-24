@@ -157,113 +157,7 @@ margin-right: 20px;
 a{
     text-decoration: none;
 }
-#img{
-    width: 90%;
-    margin: auto;
-    margin-top: 150px;
-}
-#img>div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-#fill{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* margin-top: 150px; */
-    margin-bottom: 40px;
-}
-.rightBorder{
-    border-right: 1px solid gray;
-}
-#fill>a{
-    font-size: 30px;
-    color: #000;
-}
-#filter{
-    padding-left: 20px;
-    font-size: 25px;
-}
-#product-container{
-    width: 90%;
-    margin: auto;
-    /* margin-top: 150px; */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-}
-#product-container>div{
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    /* padding-left: 10px; */
-    padding-bottom: 20px;
-}
-#product-container>div >div{
-    width: 80%;
-    margin: auto;
-    /* border: 2px solid red; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    margin-top: 10px;
-    padding: 15px;
-}
-#product-container>div >div>img{
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-#product-container h2{
-    /* color: red; */
-    padding-left: 20px;
-    font-size: 1.2rem;
-}
-#product-container h2:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-#product-container h3{
-    padding-left: 20px;
-}
-.discount{
-    text-decoration-line: line-through;
-    margin-top: -15px;
-}
-#product-container p{
-    padding-left: 20px;
-}
-.discription{
-    color: red;
-}
-.discription:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-#product-container button{
-    font-size: 15px;
-    padding: 10px 15px;
-    display: block;
-    margin: auto;
-    border: none;
-    background-color: #de0856;
-    color: white;
-    border-radius: 6px;
-}
-#product-container button:hover{
-    background-color: #f4065d;
-    cursor: pointer;
-}
-#product-container img:hover{
-    transform: scale(1.1);
-    z-index: 1;
-}
-h1{
-    text-align: center;
-}
-h1:hover{
-    text-decoration: underline;
-    cursor:pointer;
-}
+
 #belowFooter>div{
     width: 90%;
     margin: auto;
@@ -273,6 +167,9 @@ h1:hover{
 #belowFooter>div>div{
     padding-left: 40px;
     line-height: 30px;
+}
+.rightBorder{
+    border-right: 1px solid gray;
 }
 #bfoot{
     display: flex;
@@ -314,5 +211,85 @@ body>p{
     text-align: center;
     margin-bottom: 40px;
     margin-top: 30px;
+}
+#place-order{
+    width: 500px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#place-order>h1{
+    padding-top: 20px;
+    padding-left: 4%;
+}
+.coupons{
+    border: 2px solid black;
+    width: 90%;
+    margin: auto;
+}
+#place-order>h3>span{
+    color: rgb(8, 110, 8);
+}
+#place-order>h3,p{
+    padding-left: 4%;
+}
+
+#place-order>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#place-order>hr{
+    width: 90%;
+}
+#place-order>div>div:last-child{
+    /* border: 2px solid red; */
+    text-align: right;
+    padding-right: 20px;
+}
+#place-order>div>div:first-child{
+    padding-left: 20px;
+}
+#Apply{
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    /* border: none; */
+    font-size: 20px;
+    height: 40px;
+    border-radius: 6px;
+    color: #1976D2;
+    border: 2px solid #1976D2;
+}
+#Apply:hover{
+    border: 3px solid #1565C0 ;
+    cursor: pointer;
+}
+#toMon{
+    color: green;
+}
+#divide{
+    color: red;
+}
+#free{
+    color: green;
+}
+#pay{
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #1976D2;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+#pay:hover{
+    background-color: #1565C0;
+    cursor: pointer;
 }
 

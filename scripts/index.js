@@ -15,3 +15,9 @@ function slideshowFun(images){
     }, 2000);
   }
   slideshowFun(slideshow);
+
+let imageIcon=document.getElementById('iconImage');
+
+imageIcon.addEventListener('click',()=>{
+  window.location.href='../index.html';
+})
