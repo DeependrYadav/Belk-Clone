@@ -10,7 +10,7 @@
   <body>
     <div id="nav">
         <div>
-            <img src="/image/authentic mart.png" alt="">
+            <img id="iconImage" src="/image/authentic mart.png" alt="">
             <input type="text" placeholder="What can we help you find?">
             <h3>Authentic rewards+</h3>
             <div class="ldropdown">
@@ -721,7 +721,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <a class="dropbtn" href="#">Conn's x Belk</a>
                     <div class="dropdown-content">
                         <div>
@@ -858,7 +858,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <p>Find a store</p>
         </div>
@@ -866,10 +866,11 @@
     <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
     <div id="cart-container">
       <!-- Here Append All the cart Products  -->
-    </div><hr>
+    </div>
+    <button id="pOrder">Place order</button><hr>
     <div id="belowFooter">
         <div>
-            <div>
+            <div class="rightBorder">
                 <h2>Costumer services</h2>
                 <p>Contact us</p>
                 <p>Find my order</p>
@@ -881,10 +882,10 @@
                 <p>Shipping Information</p>
                 
             </div>
-            <div>
+            <div class="rightBorder">
                 <h2>Belk Rewards+ Credit Card</h2>
                 <div id="bfoot">
-                    <img src="../image/creditCardImg.png" alt="">
+                    <img src="./image/creditCardImg.png" alt="">
                     <p>Apply for a belk Rewards+ credit card</p>
                 </div>
                 <p>Pay my bills</p>
@@ -893,7 +894,7 @@
                 <p>Pickup & Delivery Options</p>
                 
             </div>
-            <div>
+            <div class="rightBorder">
                 <h2>About Belk</h2>
                 <p>About us</p>
                 <p>Buy Online, Pick Up In Store</p>
@@ -906,14 +907,14 @@
             </div>
             <div id="qr">
                 <h2>Get the belk App</h2>
-                <img src="../image/Screenshot_20230222_142353.png" alt="">
+                <img src="./image/Screenshot_20230222_142353.png" alt="">
                 <img src="https://belk.scene7.com/is/image/Belk/footer-app-ios-badge-2x?&$DWP_ARTWORK$" alt="">
                 <img src="https://belk.scene7.com/is/image/Belk/footer-app-android-badge-2x?&$DWP_ARTWORK$" alt="">
             </div>
         </div>
         <div style="width: 70%;margin: auto;" id="fbinsta">
             <h2>Stay connected</h2>
-            <img src="../image/facebook insta.png" alt="">
+            <img src="./image/facebook insta.png" alt="">
             <div>
                 <p>Get $10 off with email sign-up! Use on top of coupons.</p>
             </div>
@@ -968,7 +969,10 @@
 
         details.classList.add('discription');
         dprice.classList.add('discount');
-        cartBtn.classList.add('remove')
+        cartBtn.classList.add('remove');
+        decri.classList.add('incri');
+        incri.classList.add('incri');
+
         img.src=ele.image;
         idiv.append(img);
         brand.innerText=ele.title;
@@ -1019,5 +1023,17 @@
         cCont.append(div);
       })
     };
+
+    let pOrder=document.getElementById('pOrder');
+    pOrder.addEventListener('click',()=>{
+        localStorage.setItem('totalMoney',total.innerText);
+        window.location.href="../htmlFile/placeOrder.html"
+    });
+
+    let imageIcon=document.getElementById('iconImage');
+
+    imageIcon.addEventListener('click',()=>{
+    window.location.href='../index.html';
+    });
   </script>
 </script>

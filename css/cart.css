@@ -44,7 +44,7 @@ body{
     height: 50px;
 }
 #button {
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,7 +63,7 @@ body{
 .dropdown-content{
     position: absolute;
     /* background-color: #f1f1f1; */
-    min-width: 900px;
+    min-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;    
     z-index: 1;
     display: none;
@@ -79,7 +79,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 900px;
+    width: 750px;
     padding-left: 30px;
     background-color: white;
     /* margin-top: 10px; */
@@ -89,6 +89,9 @@ body{
     padding-left: 20px;
     padding-right: 90px;
     text-decoration: underline;
+}
+.dropdown:hover .dropdown-content > div:last-child{
+margin-right: 20px;
 }
 .dropdown:hover .dropdown-content > div{
     margin-top: 50px;
@@ -165,6 +168,9 @@ a{
     padding-left: 40px;
     line-height: 30px;
 }
+.rightBorder{
+    border-right: 1px solid gray;
+}
 #bfoot{
     display: flex;
     width: 80%;
@@ -215,7 +221,7 @@ body>p{
     margin: auto;
     /* margin-top: 150px; */
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
 #cart-container>div{
@@ -271,10 +277,10 @@ body>p{
     color: white;
     border-radius: 6px;
 } */
-#cart-container button:hover{
+/* #cart-container button:hover{
     background-color: #1565C0;
     cursor: pointer;
-}
+} */
 #cart-container img:hover{
     transform: scale(1.1);
     z-index: 1;
@@ -286,10 +292,50 @@ h1:hover{
     text-decoration: underline;
     cursor:pointer;
 }
-#cart-container button{
-    margin-left: 20px;
-}
 .remove{
+    font-size: 18px;
+    padding: 10px 25px;
     display: block;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+    background-color: #c61b1b;
+    color: white;
+    border-radius: 6px;
+}
+.remove:hover{
+    background-color: #ff0000;
+    cursor: pointer;
+}
+#cart-container span{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+}
+.incri{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 10px;
     margin-left: 20px;
+    border: none;
+    border-radius: 6px;
+}
+#pOrder{
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    /* border: none; */
+    font-size: 20px;
+    height: 40px;
+    border-radius: 6px;
+    color: #1976D2;
+    border: 2px solid #1976D2;
+}
+#pOrder:hover{
+    border: 3px solid #1565C0 ;
+    cursor: pointer;
 }

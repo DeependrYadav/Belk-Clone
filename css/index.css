@@ -44,7 +44,7 @@ body{
     height: 50px;
 }
 #button {
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,7 +63,7 @@ body{
 .dropdown-content{
     position: absolute;
     /* background-color: #f1f1f1; */
-    min-width: 900px;
+    min-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;    
     z-index: 1;
     display: none;
@@ -79,7 +79,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 900px;
+    width: 750px;
     padding-left: 30px;
     background-color: white;
     /* margin-top: 10px; */
@@ -89,6 +89,9 @@ body{
     padding-left: 20px;
     padding-right: 90px;
     text-decoration: underline;
+}
+.dropdown:hover .dropdown-content > div:last-child{
+margin-right: 20px;
 }
 .dropdown:hover .dropdown-content > div{
     margin-top: 50px;
@@ -190,8 +193,9 @@ a{
     flex-wrap:wrap ;
 }
 #footer > div>button{
-    height: 60px;
-    width: 120px;
+    /* height: 30px; */
+    /* width: 120px; */
+    padding: 10px;
     margin: auto
 }
 #footer > h3{
@@ -201,12 +205,17 @@ a{
 #belowFooter>div{
     width: 90%;
     margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);;
 }
 #belowFooter>div>div{
     padding-left: 40px;
     line-height: 30px;
+}
+.rightBorder{
+    border-right: 1px solid gray;
 }
 #bfoot{
     display: flex;

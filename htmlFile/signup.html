@@ -10,7 +10,7 @@
 <body>
     <div id="nav">
         <div>
-            <img src="/image/authentic mart.png" alt="">
+            <img id="iconImage" src="/image/authentic mart.png" alt="">
             <input type="text" placeholder="What can we help you find?">
             <h3>Authentic rewards+</h3>
             <div class="ldropdown">
@@ -721,7 +721,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <a class="dropbtn" href="#">Conn's x Belk</a>
                     <div class="dropdown-content">
                         <div>
@@ -858,7 +858,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <p>Find a store</p>
         </div>
@@ -924,6 +924,12 @@
         password.value=null;
 
         alert('Account created successfully')
-    })
+    });
+
+    let imageIcon=document.getElementById('iconImage');
+
+    imageIcon.addEventListener('click',()=>{
+    window.location.href='../index.html';
+    });
         
 </script>
