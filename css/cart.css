@@ -289,7 +289,7 @@ h1{
     text-align: center;
 }
 h1:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor:pointer;
 }
 .remove{
@@ -338,4 +338,7 @@ h1:hover{
 #pOrder:hover{
     border: 3px solid #1565C0 ;
     cursor: pointer;
+}
+#cart-total{
+    color: green;
 }

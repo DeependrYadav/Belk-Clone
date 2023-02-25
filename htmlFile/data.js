@@ -112,7 +112,7 @@ export const data=[
       "title": "BOSS BY HUGO BOSS",
       "image": "https://cdna.lystit.com/200/250/tr/photos/saksoff5th/055af948/calvin-klein-Black-Coleman-Wool-Blend-Coat.jpeg",
       "description": "Slim-fit Coat In Responsible Cashmere - Blue",
-      "price": "$1,979",
+      "price": "$1979",
       "category": "coats",
       "type": "men"
     },
@@ -193,7 +193,7 @@ export const data=[
       "title": "BOSS BY HUGO BOSS",
       "image": "https://cdna.lystit.com/200/250/tr/photos/hugo_boss/7bcf8516/boss-by-hugo-boss-Grey-Relaxed-fit-Coat-In-A-Melange-Wool-Blend.jpeg",
       "description": "Slim-fit Coat In Responsible Cashmere With Signature Lining - Metallic",
-      "price": "$1,979",
+      "price": "$1979",
       "category": "coats",
       "type": "men"
     },
