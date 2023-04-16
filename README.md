@@ -4,18 +4,18 @@ On page ```load```, a list all ```employees``` should be shown in ```div#data-li
 
 UI: 
 
-![front page](https://user-images.githubusercontent.com/101581634/224396111-b27f7935-cad3-4573-aaa6-5f3d12fa1214.png)
+![front page](./image/landing_page.png)
 
 Markup:
 - elements, classes & IDs should be identical to the below screenshot.
 - The data should be fetched , make a 'GET' request at ```${baseServerURL}/employees```
 - The employees should be shown on page ```load```
 
-![front page mark up](https://user-images.githubusercontent.com/101581634/224468737-3abfb839-f899-4b31-89d2-de0e4aeaf7fc.png)
+![front page mark up](./image/product_page.png)
 
 
 ### Problem 2. Ability to add new Employee [3]
-![add employee](https://user-images.githubusercontent.com/101581634/224396075-562c3ace-ea67-4bb6-9afb-f929396ea12a.png)
+![add employee](./image/cart_page.png)
 
 - make a 'POST' request at ```${baseServerURL}/employees```
 the page must not reload
@@ -35,7 +35,7 @@ the list must update
 - `#update-employee-dept` should be populated with the `department` of the employee
 - `#update-employee-salary` should be populated with the `salary` of the employee
 
-![edit ](https://user-images.githubusercontent.com/101581634/224396082-394508b3-ee94-4fae-a0ea-23d48ad5c005.png)
+![edit ](./image/payment_page.png)
 
 - make a 'PATCH' request at ```${baseServerURL}/employees/${empId}``` to updated name , image ,dept and salary
 - page must not reload
