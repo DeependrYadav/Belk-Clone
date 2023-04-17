@@ -1,6 +1,5 @@
 # -true-mine-3269
-fetch url: `/employees`
-On page ```load```, a list all ```employees``` should be shown in ```div#data-list-wrapper```.
+Deployed-link https://effortless-figolla-edac29.netlify.app/index.html
 
 UI: 
 
