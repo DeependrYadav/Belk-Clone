@@ -9,7 +9,7 @@ CSS
 JavaScript
 
 # Installation
-1. Clone the repository to your local machine using git clone https://github.com/viveKing21/masai-ecom.git
+1. Clone the repository to your local machine using git clone https://github.com/DeependrYadav/-true-mine-3269.git
 2. Upload the files to your web server
 
 # Usage
